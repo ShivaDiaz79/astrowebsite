@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+.container p {
+  text-align: justify;
+  padding: 0 1rem; /* agregar un pequeño margen para separar el texto de la imagen */
+}
+
+.imageWrapper {
+  width: 100%;
+  max-width: 100px;
+  margin-bottom: 1rem;
+}
+
+.image {
+  width: 80%;
+  height: auto;
+  display: block;
+}
+.texto-izquierda {
+  text-align: left;
+}
+
+.paragraph {
+  margin-left: 10;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .imageWrapper {
+    margin-right: 1rem;
+    margin-bottom: 0;
+  }
+
+  .paragraph {
+    margin-left: 2rem;
+    flex: 1;
+    text-align: left;
+  }
+}

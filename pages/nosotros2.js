@@ -1,64 +1,45 @@
 import Image from "next/image";
 import Layout from "@/components/Layout";
-import Styles from "../styles/nosotros.module.css"
+import styles from "../styles/nosotros.module.css";
+
+
 const Nosotros = () => {
   return (
-    <Layout> 
-    <div className={Styles.container}>
-      <video className={Styles.video} src="/video.mp4" autoPlay loop muted></video>
-      <div className={Styles.right}>
-        <p>Escribe aquí</p>
+    <Layout>
+      <div className={styles.container}>
+        <h2>Quiénes somos</h2>
+        <p>
+          las ventajas de tener una aplicación móvil y un sitio web totalmente
+        </p>
+        <p>
+          Mejora la visibilidad en línea: Tener una aplicación móvil y un sitio
+          web 
+        </p>
       </div>
-      <div className={Styles.section}>
-        <h2>Título</h2>
-        <h3>Subtítulo</h3>
-        <div className={Styles.carousel}>
-          <div className={Styles.slide}>
-            <img src="/img/foto2.jpg" alt="Imagen 1" />
-            <p>Texto de la imagen 1</p>
-          </div>
-          <div className={Styles.slide}>
-            <img src="/img/foto2.jpg" alt="Imagen 2" />
-            <p>Texto de la imagen 2</p>
-          </div>
-          <div className={Styles.slide}>
-            <img src="/img/foto2.jpg" alt="Imagen 3" />
-            <p>Texto de la imagen 3</p>
-          </div>
+      <div className={styles.imageContainer}>
+        <Image
+          src="/img/foto2.jpg"
+          alt="Imagen de la empresa"
+          width={400}
+          height={400}
+        />
+      </div>
+      <div className={styles.galleryContainer}>
+        <div className={styles.column}>
+          <Image src="/img/foto2.jpg" alt="Imagen 1" width={600} height={400} />
+          <Image src="/img/foto2.jpg" alt="Imagen 2" width={600} height={400} />
+          <Image src="/img/foto2.jpg" alt="Imagen 4" width={600} height={400} />
+          
         </div>
-        <div className={Styles.video2}>
-          <video src="/img/earthmoon.mp4" controls></video>
-        </div>
-        <div className={Styles.table}>
-          <div className={Styles.square}>
-            <img src="/img/foto2.jpg" alt="Imagen 4" />
-            <p>Texto de la imagen 4</p>
-          </div>
-          <div className={Styles.square}>
-            <img src="/img/foto2.jpg" alt="Imagen 5" />
-            <p>Texto de la imagen 5</p>
-          </div>
-          <div className={Styles.square}>
-            <img src="/img/foto2.jpg" alt="Imagen 6" />
-            <p>Texto de la imagen 6</p>
-          </div>
-          <div className={Styles.square}>
-            <img src="/img/foto2.jpg" alt="Imagen 7" />
-            <p>Texto de la imagen 7</p>
-          </div>
-          <div className={Styles.square}>
-            <img src="/img/foto2.jpg"alt="Imagen 8" />
-            <p>Texto de la imagen 8</p>
-          </div>
-          <div className={Styles.square}>
-            <img src="/img/foto2.jpg" alt="Imagen 9" />
-            <p>Texto de la imagen 9</p>
-          </div>
+        <div className={styles.column}>
+          <Image src="/img/foto2.jpg" alt="Imagen 3" width={300} height={400} />
+          <Image src="/img/foto2.jpg" alt="Imagen 4" width={600} height={400} />
+          <Image src="/img/foto2.jpg" alt="Imagen 4" width={600} height={400} />
+          
         </div>
       </div>
-    </div>
     </Layout>
-  )
-}
+  );
+};
 
-export default  Nosotros
+export default Nosotros;

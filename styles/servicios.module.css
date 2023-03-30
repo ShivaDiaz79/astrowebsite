@@ -1,0 +1,238 @@
+.contenido {
+  display: grid;
+  gap: 4rem;
+}
+
+@media (min-width: 768px) {
+  .contenido {
+    grid-template-columns: repeat(3, 2fr);
+    align-items: center;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.right {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+}
+
+.right p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px #000;
+}
+
+.section {
+  width: 100%;
+  max-width: 2000px;
+  margin-top: -50vh;
+  padding: 100px 20px;
+  background-color: transparent;
+}
+
+.section h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.section h3 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+  color: white;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+
+.video2 {
+  margin-top: 50px;
+}
+
+.video2 video {
+  width: 100%;
+}
+
+.table {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.square {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  padding: 20px;
+}
+
+.square img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 30px;
+}
+
+.square p {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #fff;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.square img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.square img:hover {
+  transform: scale(1.1);
+}
+.square img:hover + p {
+  filter: blur(5px);
+}
+
+.square {
+  transition: all 0.4s ease-out;
+  transform-style: preserve-3d;
+}
+.square:hover {
+  --translateX: 20px;
+  --translateY: 20px;
+  --rotateX: 10deg;
+  --rotateY: 10deg;
+  transform: translateX(var(--translateX)) translateY(var(--translateY)) rotateX(var(--rotateX)) rotateY(var(--rotateY));
+}
+.square:nth-child(1):hover {
+  --translateX: -100px;
+  --translateY: -50px;
+  --rotateX: -10deg;
+  --rotateY: -20deg;
+}
+
+.square:nth-child(2):hover {
+  --translateX: 50px;
+  --translateY: -80px;
+  --rotateX: 20deg;
+  --rotateY: 10deg;
+}
+
+.square:nth-child(3):hover {
+  --translateX: -30px;
+  --translateY: 80px;
+  --rotateX: 5deg;
+  --rotateY: -15deg;
+}
+
+.square:nth-child(4):hover {
+  --translateX: 80px;
+  --translateY: 60px;
+  --rotateX: 15deg;
+  --rotateY: -5deg;
+}
+
+.square:nth-child(5):hover {
+  --translateX: -40px;
+  --translateY: -70px;
+  --rotateX: -8deg;
+  --rotateY: 12deg;
+}
+
+.square:nth-child(6):hover {
+  --translateX: 60px;
+  --translateY: 40px;
+  --rotateX: -5deg;
+  --rotateY: 18deg;
+}
+
+.square:nth-child(7):hover {
+  --translateX: -80px;
+  --translateY: 30px;
+  --rotateX: 12deg;
+  --rotateY: 5deg;
+}
+
+.square:nth-child(8):hover {
+  --translateX: 40px;
+  --translateY: -40px;
+  --rotateX: 18deg;
+  --rotateY: -12deg;
+}
+.square:hover {
+  --translateX: -10px;
+  --translateY: 10px;
+  --rotateX: 5deg;
+  --rotateY: 5deg;
+  transform: translateX(var(--translateX)) translateY(var(--translateY)) rotateX(var(--rotateX)) rotateY(var(--rotateY));
+}
+
+@media (max-width: 768px) {
+  .square:hover {
+    --translateX: 0;
+    --translateY: 0;
+    --rotateX: 0;
+    --rotateY: 0;
+    transform: translateX(var(--translateX)) translateY(var(--translateY)) rotateX(var(--rotateX)) rotateY(var(--rotateY));
+  }
+}
+
+
+/* .white {
+  color: #fff;
+  background-color: #000;
+}
+
+.black {
+  color: #000;
+  background-color: #fff;
+} */
+.black-container {
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.5;
+}
+.section {
+  position: relative;
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: -1;
+}
+

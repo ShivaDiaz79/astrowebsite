@@ -1,42 +1,36 @@
-import Layout from "@/components/Layout";
-import HomeSection from "@/components/HomeSection";
-import FullscreenVideo from "../components/FullscreenVideo";
-import { getNews } from '../utils/newsAPI';
-import FrequentQuestions from "@/components/ FrequentQuestions";
+import LandingHeader from "@/components/LandingHeader";
+import { getNews } from "../utils/newsAPI";
+import CryptoPrices from "@/components/CryptoPrices ";
+import SectionBlog from "@/components/SectionBlog";
+import SectionBlogb from "@/components/SectionBlogb";
 
 export async function getStaticProps() {
   const news = await getNews();
   return {
     props: {
-      news
-    }
-  }
+      news,
+    },
+  };
 }
 
 function Blog({ news }) {
-  
   return (
-    <Layout>
-        <FrequentQuestions
-        
-        />
-      <ul style={{ listStyle: "none", padding: 0 }}>
-        {news.map((article, index) => (
-          <li key={index} style={{ margin: "1rem 0" }}>
-            <h2 style={{ fontSize: "1.5rem", marginBottom: "0.5rem" }}>{article.title}</h2>
-            <p style={{ fontSize: "1rem" }}>{article.description}</p>
-          </li>
-        ))}
-      </ul>
-      <HomeSection imagePath={'/Img/foto3.jpg'} text={'Hola'}/> 
-      <FullscreenVideo videoPath={'/Img/earthmoon.mp4'} text={'Hola'}/>  
-      
-      <FullscreenVideo videoIzquierda={true} videoPath={'/Img/earthmoon.mp4'} text={'Hola'}/>  
-      <FrequentQuestions
-        
-      />
-    </Layout>
-  )
+    <div>
+      <LandingHeader />
+
+      <div className=" snap-y snap-mandatory relative w-full h-screen overflow-auto scroll-smooth">
+        <div className="snap-center">
+          <SectionBlog />
+        </div>
+        <div className="snap-center">
+          <SectionBlogb />
+        </div>
+        <div className="snap-center">
+          <CryptoPrices />
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default Blog;

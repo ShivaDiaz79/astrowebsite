@@ -14,7 +14,7 @@ const VideoPlayer = ({ src }) => {
   return (
     <div>
       <video ref={videoRef}>
-        <source src={src} type="/Img/earthmoon.mp4" />
+        <source src={src} type=""s />
       </video>
     </div>
   );

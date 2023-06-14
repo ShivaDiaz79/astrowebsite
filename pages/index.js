@@ -1,21 +1,22 @@
+import HeroSection from "@/components/HeroSection";
+import LandingHeader from "@/components/LandingHeader";
+import ChargeSectionimg from "@/components/ChargeSectionimg";
 
-
-import HomeSection from "@/components/HomeSection";
-
-import Layout from "@/components/Layout";
-
-const HomePage = () => {
-
-  
+const ZonaCero = () => {
   return (
-    <Layout>
-      <HomeSection imagePath={'/Img/foto3.jpg'} text={'Hola'}/>    
-      <HomeSection imagenIzquierda={true} imagePath={'/Img/foto3.jpg'} text={'Hola 57575765'}/>   
-      <HomeSection imagePath={'/Img/foto3.jpg'} text={'Hola'}/>    
-      <HomeSection imagenIzquierda={true} imagePath={'/Img/foto3.jpg'} text={'Hola 57575765'}/> 
+    <main>
+      <LandingHeader />
 
-    </Layout>
+      <div className=" snap-y snap-mandatory relative w-full h-screen overflow-auto scroll-smooth">
+        <div className="snap-center">
+          <HeroSection />
+        </div>
+        <div className="snap-center">
+          <ChargeSectionimg />
+        </div>
+      </div>
+    </main>
   );
 };
 
-export default HomePage;
+export default ZonaCero;

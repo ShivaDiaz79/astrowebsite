@@ -1,42 +1,27 @@
-import styles from '../styles/Footer.module.css'
-import Link from 'next/link'
+import Link from 'next/link';
 
-export default function Footer() {
+const Footer = () => {
   return (
-    <footer className={styles.footer}>
-      <ul className={styles.footerLinks}>
-        <li>
-          <Link href="/politica-privacidad">Política de Privacidad</Link>
-        </li>
-        <li>
-          <Link href="/terminos-y-condiciones">Términos y Condiciones</Link>
-        </li>
-        <li>
-          <Link href="/seguridad">Política de Seguridad</Link>
-        </li>
-      </ul>
-      <ul className={styles.footerLinks}>
-        <li>
-          <Link href="/redes-sociales">Redes Sociales</Link>
-        </li>
-        <li>
-          <Link href="/ubicacion">Ubicación</Link>
-        </li>
-        <li>
-          <Link href="/contacto">Contacto</Link>
-        </li>
-      </ul>
-      <ul className={styles.footerLinks}>
-        <li>
-          <Link href="/empresa-1">Empresa 1</Link>
-        </li>
-        <li>
-          <Link href="/empresa-2">Empresa 2</Link>
-        </li>
-        <li>
-          <Link href="/empresa-3">Empresa 3</Link>
-        </li>
-      </ul>
+    <footer className="bg-gray-900 text-gray-50 py-6">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col md:flex-row justify-between items-center">
+          <div className="text-lg mb-4 md:mb-0">Mi sitio web</div>
+          <div className="flex items-center">
+            
+            <Link href="/"
+              className="mr-4 hover:text-gray-300">Inicio
+            </Link>
+            <Link href="/acerca"
+              className="mr-4 hover:text-gray-300">Acerca de
+            </Link>
+            <Link href="/contacto"
+              className="hover:text-gray-300">Contacto
+            </Link>
+          </div>
+        </div>
+      </div>
     </footer>
-  )
-}
+  );
+};
+
+export default Footer;

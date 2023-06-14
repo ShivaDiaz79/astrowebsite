@@ -7,7 +7,7 @@ const Layout = ({children, pagina}) => {
     <div>
       <Head>
         <title> Astro Web - {pagina} </title>
-        <meta name='description' content='Sitio Web de Academias de Baile'/>
+        <meta name='description' content='Sitio Web Businees Coin developer '/>
         </Head>
         <Header />
 

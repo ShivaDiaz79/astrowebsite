@@ -61,32 +61,32 @@ const LandingHeader = () => {
         
         <MenuVar />
         <nav className="">
-          <ul className="hidden sm:flex text-2xl font-schibsted [&>li>a]:text-white [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:font-medium [&>li>a]:inline [&>li>a]:px-4 [&>li>a]:py-2 z-10">
+          <ul className="hidden sm:flex text-2xl font-loco [&>li>a]:text-white [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:font-medium [&>li>a]:inline [&>li>a]:px-4 [&>li>a]:py-2 z-10">
             <li>
-              <a href="/">ZonaCero</a>
+              <a href="/">ZONA CERO</a>
             </li>
             <li>
-              <a href="/servicios">Servicios</a>
+              <a href="/quienesSomoss">QUIENES SOMOS</a>
             </li>
             <li>
-              <a href="/blog">Blog</a>
+              <a href="/blog">BLOG</a>
             </li>
           </ul>
         </nav>
 
         <nav className="hidden sm:flex flex-grow justify-end basis-0">
-          <ul className="flex text-2xl font-schibsted [&>li>a]:text-white [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:font-medium [&>li>a]:inline [&>li>a]:px-4 [&>li>a]:py-2">
+          <ul className="flex text-2xl font-loco [&>li>a]:text-white [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:font-medium [&>li>a]:inline [&>li>a]:px-4 [&>li>a]:py-2">
             <li>
-              <a href="/servicioUx">Diseño Ux</a>
+              <a href="/servicioUx">DISEÑO UX</a>
             </li>
             <li>
-              <a href="/desarrolloWeb">WebSite</a>
+              <a href="/desarrolloWeb">WEBSITE</a>
             </li>
             <li>
-              <a href="/desarrolloApp">Aplicaciones</a>
+              <a href="/desarrolloApp">APLICACIONES</a>
             </li>
             <li>
-              <a href="/serviciosWebmaster">Web Master</a>
+              <a href="/serviciosWebmaster">WEB MASTER</a>
             </li>
           </ul>
         </nav>

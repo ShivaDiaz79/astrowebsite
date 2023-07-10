@@ -1,40 +1,43 @@
-import React from 'react'
-import Image from 'next/image'
-import LandingHeader from './LandingHeader'
+
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import TranslateEsection from "./TranslateCmpt/TranslateEsection";
+import TranslateFsection from "./TranslateCmpt/TranslateFsection";
+
+
 const ChargeSectionimg = () => {
   return (
-    <section className="landing-section bg-black  h-screen w-screen text-center relative" data-header-color= "">
+    <section className=" bg-black h-screen w-screen text-center relative ">
     <div className="z-30 relative h-full flex flex-col">
       <header>
-      
-        <div className="flex flex-col items-center">
-        <h2 className=" text-white  mx-6 pt-40 text-[40px] font-medium "> Diseño de interfaz y experiencia de usuario</h2>
-          <p className="text-white  text-lg font-schibsted font-medium mt-2">
-          "El buen diseño no se trata solo de hacer que algo se vea bonito, sino de hacer que funcione de manera efectiva y brinde una experiencia excepcional al usuario".
-          </p>
-        </div>
+      <div className="flex flex-col items-center text-black py-10  mx-4 bg-amber-200 sm:mx-32 mt-40  text-center  text-4xl font-medium  text-spacing">
+            <TranslateEsection
+              text1={"ESTAS SON LAS 20 CRIPTOS MAS IMPORTANTE DEL MERCADO "}
+            />
+          </div>
       </header>
-      <footer className="flex flex-grow flex-col justify-end pb-20">
-        <div className=' gap-4 flex mx-auto'>
-          <a
-            className="text-white border-[3px] border-white/5 backdrop-blur-sm inline-block hover:bg-white hover:text-black transition-colors rounded font-medium px-12 py-6"
-            href="/"
-          >
-             hace click si quieres contactarnos
-          </a>
-          <a
-            className="text-white border-[3px] border-white/5 backdrop-blur-sm inline-block hover:bg-white hover:text-black transition-colors rounded font-medium px-12 py-6"
-            href="/servicioUx"
-          >
-           Ver un poco mas antes de contactarnos
-          </a>
-        </div>
+
+      <footer className="flex flex-grow flex-col  justify-center pb-20">
+        <header>
+          <div className="flex flex-col items-center text-black py-10  mx-4 bg-amber-200   text-center  text-4xl font-medium  text-spacing">
+            <TranslateFsection
+              text1={"ESTAS SON LAS 20 CRIPTOS MAS IMPORTANTE DEL MERCADO "}
+            />
+          </div>
+        </header>
       </footer>
     </div>
-    <div className="absolute top-0 bottom-0 left-0 h-full w-full z-10">
-      <img className="h-full w-full object-center object-cover"
-        
-     src="/Img/2.png" alt="mueestra" />
+
+    <div className="absolute top-0 bottom-0 left-0 right-0">
+      <video
+        className="h-full w-full object-center object-cover"
+        autoPlay
+        muted
+        loop
+      >
+        <source src="/Img/bic.mp4" type="video/mp4" />
+      </video>
     </div>
   </section>
 

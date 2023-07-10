@@ -1,16 +1,19 @@
 import React from 'react'
+import TranslateBsection from './TranslateBsection'
 
 const SectionAppb = () => {
   return (
     <section className=" bg-black h-screen w-screen text-center relative ">
     <div className="z-30 relative h-full flex flex-col">
-      <header>
-      
-        <div className="flex flex-col items-center">
-      
-        </div>
-      </header>
-  
+    <footer className="flex flex-grow flex-col  justify-end pb-20">
+          <header>
+            <div className="flex flex-col items-center text-white py-10  mx-4  text-center  text-4xl font-medium  text-spacing">
+              <TranslateBsection
+                text1={"ESTAS SON LAS 20 CRIPTOS MAS IMPORTANTE DEL MERCADO "}
+              />
+            </div>
+          </header>
+        </footer>
     </div>
     <div className="absolute top-0 bottom-0 left-0 right-0">
       <video
@@ -19,7 +22,7 @@ const SectionAppb = () => {
         muted
         loop
       >
-        <source src="/Img/reactnative.mp4" type="video/mp4" />
+        <source src="/Img/reactnative1.mp4" type="video/mp4" />
       </video>
     </div>
   </section>

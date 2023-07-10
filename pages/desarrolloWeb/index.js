@@ -2,32 +2,50 @@ import Image from "next/image";
 import CarouselPhotos from "@/components/CarruselPhotos";
 import LandingHeader from "@/components/LandingHeader";
 import CountdownComponent from "@/components/UiUx/CountdownComponent";
-import ImageeSection from "@/components/ImageeSection";
+import ImageSection from "@/components/ImageSection";
 import SectionWeb from "@/components/SectionWeb";
+import Footer from "@/components/Footer";
+import Mocap from "@/components/Mocap";
+import Mocap2 from "@/components/Mocap2";
+import Mocap3 from "@/components/Mocap3";
+import Mocap4 from "@/components/Mocap4";
+import Mocap5 from "@/components/Mocap5";
+import Mocap6 from "@/components/Mocap6";
+import AddAnimation from "@/components/AddAnimation";
+import Imagenblack from "@/components/Imagenblack";
+import Galeria from "@/components/Galeria";
+import PlaySource from "@/components/PlaySource";
+
+
+
 const DesarrolloWeb = () => {
-  const photos = ["1.png", "2.png", "3.png"];
+  const photos = ["11.jpg", "12.jpg", "13.jpg","14.jpg","15.jpg", "16.jpg"];
   return (
-    <div>
-      <LandingHeader/>
-     
-      <SectionWeb/>
+    <div className="bg-black">
+      <LandingHeader />
 
-      <div className=" bg-black p-10 sm:p-36 " />
-      <div className=" m-2 sm:m5"> 
-        <CarouselPhotos photos={photos} />
-      </div>
+      <SectionWeb />
 
-      <div className=" bg-red-800 flex-auto  m-6">
-        <h1 className=" text-blue-50 ">Countdown</h1>
+      <ImageSection />
+      <CarouselPhotos photos={photos} />
+      <div className="m-10">
         <CountdownComponent />
       </div>
-
-      <ImageeSection />
+      <Galeria/>
+      <PlaySource/>
    
-
-    
-
-      
+      <Imagenblack />
+      <AddAnimation />
+      <Mocap6 />
+      <Mocap5 />
+      <Mocap4 />
+      <Mocap3 />
+      <Mocap2 />
+      <div className="bg-white">
+        <Mocap />
+        
+      </div>
+      <Footer />
     </div>
   );
 };

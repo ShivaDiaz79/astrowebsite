@@ -45,12 +45,12 @@ const Navbar = () => {
               //   event.preventDefault();
               //   abrirMenu("servicios");
               // }}
-              href="/servicios"
+              href="/quienesSomoss"
               className="flex items-center pr-5 mt-4 lg:inline-block lg:mt-0 text-white  hover:text-slate-500"
             >
               <div className="inline-flex items-center">
                 <span className="mr-1 font-anton text-6xl px-5 ">
-                  SERVICIOS
+                  QUIENES SOMOS
                 </span>
               </div>
             </a>

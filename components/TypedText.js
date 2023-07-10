@@ -17,16 +17,20 @@ const TypedText = ({
   useEffect(() => {
     const titleOptions = {
       strings: Array.isArray(title) ? title : [title],
-      typeSpeed: 100,
-      backSpeed: 80,
-      loop: true
+      typeSpeed: 50,  // Ajusta este valor según tus necesidades
+      backSpeed: 30,  // Ajusta este valor según tus necesidades
+      loop: true,
+      showCursor: true,
+     cursorChar: '',
     };
 
     const paragraphOptions = {
       strings: Array.isArray(paragraph) ? paragraph : [paragraph],
-      typeSpeed: 50,
-      backSpeed: 30,
-      loop: true
+      typeSpeed: 70,  // Ajusta este valor según tus necesidades
+      backSpeed: 50,  // Ajusta este valor según tus necesidades
+      loop: true,
+      showCursor: true,
+     cursorChar: '',
     };
 
     if (titleRef.current) {
@@ -49,7 +53,7 @@ const TypedText = ({
   }, [title, paragraph]);
 
   return (
-    <div className="relative flex justify-center py-80 mx-4 sm:mx-10">
+    <div className="relative flex flex-col justify-center py-40 mx-4 sm:mx-10">
       <h1
         ref={titleRef}
         className={`${titleStyle} ${h1Color}`}
@@ -63,3 +67,5 @@ const TypedText = ({
 };
 
 export default TypedText;
+
+

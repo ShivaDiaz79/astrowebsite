@@ -29,24 +29,24 @@ const CryptoPrices = () => {
   }
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 border border-black m-6">
+    <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 border  m-6 z-10">
       {cryptoData &&
         cryptoData.map((crypto) => {
 
-          return <div key={crypto.id} className="bg-gray-200 p-4 rounded shadow border border-black">
+          return <div key={crypto.id} className="bg-gray-200 rounded-xl p-4 shadow border border-black">
             <div className="flex items-center justify-between mb-4">
               <h2 className="text-xl font-bold">{crypto.name}</h2>
               {crypto.image && (
                 <img
                   src={crypto.image}
                   alt={crypto.name}
-                  className="w-16 h-16"
+                  className="w-10 h-10"
                 />
               )}
             </div>
 
             <div className="grid grid-cols-2 gap-2">
-              <p className="text-pink-500 text-4xl font-semibold">Price:</p>
+              <p className="text-orange-600 text-4xl font-semibold">Price:</p>
               <p className="text-gray-600 text-4xl font-semibold">{crypto.current_price}</p>
 
               <p className="text-gray-800 font-semibold">Market Cap:</p>
@@ -113,14 +113,13 @@ const CryptoPrices = () => {
               <p className="text-gray-800 font-semibold">Last Updated:</p>
               <p className="text-gray-600">{crypto.last_updated}</p>
 
-              {/* ... Agrega las demás propiedades de la criptomoneda aquí */}
             </div>
 
-            <div className="bg-white flex flex-col justify-center items-center m-16 mx-20 border border-black hover-bordered-black ">
+            <div className="flex flex-col justify-center items-center m-10 mx-10 border  hover-bordered-black ">
             <img
               src={`https://www.coingecko.com/coins/${extraerNumeroDeURL(crypto.image)}/sparkline.svg`}
               alt="Sparkline"
-              className=" w-64 h-48 "
+              className=" w-48 h-20"
             />
             </div>
           </div>

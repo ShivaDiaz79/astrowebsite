@@ -5,7 +5,7 @@ import ColorSeccion from "./ColorSeccion";
 const AstroSecction = () => {
   return (
    
-        <div className="">
+        <section>
            
 
           <marquee className=" bg-transparent  py-2 my-2 animate-marquee  whitespace-nowrap">
@@ -33,8 +33,7 @@ const AstroSecction = () => {
             </svg>
           </marquee>
         
-          </div>
-
+          </section>
   );
 };
 

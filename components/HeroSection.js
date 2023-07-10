@@ -1,15 +1,17 @@
 import Image from "next/image";
-import LandingHeader from "./LandingHeader";
+import TypedText from "./TypedText";
 
 const HeroSection = () => {
+  const title =
+    "Encontraras la mejor informacion de desarrollo web, apps , software y criptomonedas";
+  const paragraph = "";
   return (
-    <section className=" landing-section bg-black h-screen w-screen text-center relative "
-    data-header-color="white"
+    <section
+      className=" landing-section bg-black h-screen  text-center relative "
+      data-header-color=""
     >
-      
-      <div className="z-30 relative h-full flex flex-col">
+      <div className="z-30 relative h-screen w-screen flex flex-col">
         <header>
-        
           <div className="flex flex-col items-center">
             <Image
               src="/Img/Logo-ASTRO-compl.-blanco.png"
@@ -18,9 +20,15 @@ const HeroSection = () => {
               width={400}
               alt="logo"
             />
-            <p className="text-white text-3xl mt-2">
-              Encontraras la mejor informacion de desarrollo web, apps , software y criptomonedas
-            </p>
+            <TypedText
+              title={title}
+              paragraph={paragraph}
+              titleStyle="text-4xl font-bold font-loco"
+              paragraphStyle="text-lg"
+              h1Color="text-white"
+              paragraphColor="text-blue-500"
+            />
+           
           </div>
         </header>
         <footer className="flex flex-grow flex-col justify-end pb-20">

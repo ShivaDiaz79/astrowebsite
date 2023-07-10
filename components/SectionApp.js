@@ -18,7 +18,7 @@ const SectionApp = () => {
     <section className="landing-section bg-black  text-center relative" data-header-color="">
       <div className="z-30 relative h-full flex flex-col ">
         <footer>
-          <div className="mx-6 grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <div className="mx-6 grid grid-cols-1 sm:grid-cols-3 gap-6 bg-black">
             {crearContaiLe(
               "Análisis de requisitos",
               "Comprender y documentar los requisitos y objetivos de la aplicación.",
@@ -46,7 +46,7 @@ const SectionApp = () => {
           </div>
         </footer>
         <footer className="my-2">
-          <div className="mx-6 grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <div className="mx-6 grid grid-cols-1 sm:grid-cols-3 gap-6 bg-black">
             {crearContaiLe(
               "Pruebas",
               "Verificacion de la aplicación que funcione correctamente y cumpla con los requisitos establecidos.",

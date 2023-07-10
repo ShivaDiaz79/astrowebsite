@@ -1,0 +1,34 @@
+import React from 'react'
+
+const Visual = () => {
+  return (
+  
+<section
+  className="overflow-hidden bg-[url(https://images.unsplash.com/photo-1562157873-818bc0726f68?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=654&q=80)] bg-cover bg-top bg-no-repeat"
+>
+  <div className="absolute bottom-[0px] left-0 h-full w-[200%] origin-bottom-left -translate-y-4/12 -rotate-12 transform bg-gradient-to-t from-[#800507] to-[#DA2128] md:translate-y-0">
+    <div className="bg-black/25 p-8 md:p-12 lg:px-16 lg:py-24">
+      <div className="text-center ltr:sm:text-left rtl:sm:text-right">
+        <h2 className="text-2xl font-bold text-white sm:text-3xl md:text-5xl">
+          Latest Shirts
+        </h2>
+
+        
+
+        <div className="mt-4 sm:mt-8">
+          <a
+            href="#"
+            className="inline-block rounded-full bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
+          >
+            Get Yours Today
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  )
+}
+
+export default Visual

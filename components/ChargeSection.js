@@ -8,9 +8,9 @@ const ChargeSection = () => {
           <div className="flex flex-col items-center">
             <h2 className=" text-white  mx-6 pt-40 text-[40px] font-medium ">
               {" "}
-              Diseño de interfaz y experiencia de usuario
+              Experiencia de usuario - Diseño de interfaz 
             </h2>
-            <p className="text-white  text-lg font-schibsted font-medium mt-2">
+            <p className="text-white  text-lg font-schibsted mx-3 font-medium mt-2">
               "El buen diseño no se trata solo de hacer que algo se vea bonito,
               sino de hacer que funcione de manera efectiva y brinde una
               experiencia excepcional al usuario".
@@ -28,7 +28,7 @@ const ChargeSection = () => {
           muted
           loop
         >
-          <source src="/Img/video1.mp4" type="video/mp4" />
+          <source src="/Img/webmaster4.mp4" type="video/mp4" />
         </video>
       </div>
     </section>

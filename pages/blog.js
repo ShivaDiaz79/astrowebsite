@@ -1,8 +1,10 @@
 import LandingHeader from "@/components/LandingHeader";
 import { getNews } from "../utils/newsAPI";
 import CryptoPrices from "@/components/CryptoPrices ";
-import SectionBlog from "@/components/SectionBlog";
+
+import TodoList from "@/components/UiUx/TodoList";
 import SectionBlogb from "@/components/SectionBlogb";
+import Footer from "@/components/Footer";
 
 export async function getStaticProps() {
   const news = await getNews();
@@ -18,17 +20,15 @@ function Blog({ news }) {
     <div>
       <LandingHeader />
 
-      <div className=" snap-y snap-mandatory relative w-full h-screen overflow-auto scroll-smooth">
-        <div className="snap-center">
-          <SectionBlog />
-        </div>
-        <div className="snap-center">
-          <SectionBlogb />
-        </div>
-        <div className="snap-center">
-          <CryptoPrices />
-        </div>
+      <SectionBlogb />
+
+      <div className="z-10">
+        <CryptoPrices />
       </div>
+      <div className=" container mx-auto p-4">
+        <TodoList />
+      </div>
+      <Footer/>
     </div>
   );
 }

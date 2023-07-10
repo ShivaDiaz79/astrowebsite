@@ -31,7 +31,7 @@ const CountdownComponent = () => {
   }, []);
 
   return (
-    <div className="grid grid-flow-col gap-5 text-center auto-cols-max items-center justify-center ">
+    <div className="grid grid-flow-col gap-5 text-center items-center justify-center ">
       <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
         <span className="countdown font-mono text-5xl">
           <span style={{ "--value": days }}>{days}</span>

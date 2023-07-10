@@ -3,7 +3,7 @@ import cheerio from 'cheerio';
 
 const Skokka = async (req, res) => {
   try {
-    const response = await axios.get('https://bo.skokka.com/escorts/santa-cruz/?p=10');
+    const response = await axios.get('');
     const html = response.data;
     
     const $ = cheerio.load(html);

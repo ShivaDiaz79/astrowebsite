@@ -7,9 +7,9 @@ const SectionAppb = () => {
     <div className="z-30 relative h-full flex flex-col">
     <footer className="flex flex-grow flex-col  justify-end pb-20">
           <header>
-            <div className="flex flex-col items-center text-white py-10  mx-4  text-center  text-4xl font-medium  text-spacing">
+            <div className="flex flex-col items-center text-white py-10  mx-4  text-center  text-4xl font-medium  font-loco text-spacing">
               <TranslateBsection
-                text1={"ESTAS SON LAS 20 CRIPTOS MAS IMPORTANTE DEL MERCADO "}
+                text1={"ETAPAS DEL DESARROLLO APPS "}
               />
             </div>
           </header>

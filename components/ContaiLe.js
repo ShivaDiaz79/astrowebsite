@@ -5,7 +5,7 @@ import Tilde from "./svg/Tilde";
 const ContaiLe = ({parrafo1, parrafo2, parrafo3, parrafo4,   title1,click1,imagen, }) => {
   return (
     
-        <div className="bg-pink-300 mx-10 my-7 relative rounded-xl border border-gray-700 p-4 dark:bg-slate-700 dark:border-gray-700 transition-transform hover:scale-110">
+        <div className="bg-white mx-10 my-7 relative rounded-xl border border-gray-700 p-4 dark:bg-slate-700 dark:border-gray-700 transition-transform hover:scale-110">
         <Image alt="imageo" src={imagen} width='500' height={200} className="mx-auto"/>
           
           <div className="p-6 text-center">
